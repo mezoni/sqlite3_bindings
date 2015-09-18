@@ -1,0 +1,10 @@
+name: sqlite3_bindings
+version: 0.0.5
+author: Andrew Mezoni <andrew.mezoni@gmail.com>
+description: SQLite database C bindings.
+homepage: https://github.com/mezoni/sqlite3_bindings
+dependencies:
+  binary_interop: any
+  libc: any
+dev_dependencies:
+  binary_generator: any
