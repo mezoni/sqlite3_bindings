@@ -125,6 +125,10 @@ int sqlite3_bind_value(sqlite3_stmt*, int, const sqlite3_value*);
 int sqlite3_bind_zeroblob(sqlite3_stmt*, int, int n);
 //int sqlite3_bind_zeroblob64(sqlite3_stmt*, int, sqlite3_uint64);
 
+int sqlite3_bind_parameter_count(sqlite3_stmt*);
+int sqlite3_bind_parameter_index(sqlite3_stmt*, const char *zName);
+const char *sqlite3_bind_parameter_name(sqlite3_stmt*, int);
+
 int sqlite3_errcode(sqlite3 *db);
 int sqlite3_extended_errcode(sqlite3 *db);
 const char * sqlite3_errmsg(sqlite3*);

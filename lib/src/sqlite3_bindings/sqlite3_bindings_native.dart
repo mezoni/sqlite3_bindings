@@ -1059,6 +1059,27 @@ class Sqlite3Bindings {
   }
   
   /**
+   * int sqlite3_bind_parameter_count(sqlite3_stmt *)
+   */
+  int sqlite3_bind_parameter_count(arg0) {
+    return _library.invoke("sqlite3_bind_parameter_count", [arg0]);
+  }
+  
+  /**
+   * int sqlite3_bind_parameter_index(sqlite3_stmt *, char *)
+   */
+  int sqlite3_bind_parameter_index(arg0, zName) {
+    return _library.invoke("sqlite3_bind_parameter_index", [arg0, zName]);
+  }
+  
+  /**
+   * char * sqlite3_bind_parameter_name(sqlite3_stmt *, int)
+   */
+  BinaryData sqlite3_bind_parameter_name(arg0, int arg1) {
+    return _library.invoke("sqlite3_bind_parameter_name", [arg0, arg1]);
+  }
+  
+  /**
    * int sqlite3_bind_text(sqlite3_stmt *, int, char *, int, void (*f)(void *))
    */
   int sqlite3_bind_text(arg0, int arg1, arg2, int arg3, f) {
