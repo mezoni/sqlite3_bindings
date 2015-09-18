@@ -16,7 +16,7 @@ Sqlite3Bindings loadSqlite3Bindings(BinaryTypes types) {
       filename = "libsqlite3.dylib";
       break;
     case "windows":
-      filename = "c:\\sqlite3.dll";
+      filename = "sqlite3.dll";
       break;
     default:
       throw new StateError("Unsupported operating system: $operatingSystem");
