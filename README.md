@@ -1,7 +1,7 @@
 #sqlite3_bindings
 ==========
 
-SQLite database C bindings.
+SQLite database engine bindings.
 
 Version: 0.0.5
 
