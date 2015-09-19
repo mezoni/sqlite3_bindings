@@ -1,3 +1,7 @@
+## 0.0.6
+
+- Added some information in `README.md`
+
 ## 0.0.5
 
 - Added function which returns the number of rows modified, inserted or deleted in header file `sqlite3`
