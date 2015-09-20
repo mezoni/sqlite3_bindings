@@ -1,3 +1,7 @@
+## 0.0.7
+
+- Added recommendation on how to install SQLite DLL on Windows
+
 ## 0.0.6
 
 - Added some information in `README.md`
