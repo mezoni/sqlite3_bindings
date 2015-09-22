@@ -1,6 +1,6 @@
 part of sqlite3_bindings;
 
-Sqlite3Bindings loadSqlite3Bindings(BinaryTypes types) {
+Sqlite3Lib loadSqlite3Library(BinaryTypes types) {
   if (types == null) {
     throw new ArgumentError.notNull("types");
   }
@@ -27,5 +27,5 @@ Sqlite3Bindings loadSqlite3Bindings(BinaryTypes types) {
     throw new StateError("Unable to load library: $filename");
   }
 
-  return new Sqlite3Bindings(library);
+  return new Sqlite3Lib(library);
 }

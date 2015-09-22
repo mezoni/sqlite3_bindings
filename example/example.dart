@@ -10,11 +10,11 @@ void main() {
   var h = new BinaryTypeHelper(t);
   h.addHeaders(SQLITE3_HEADERS);
   h.addHeaders(LIBC_HEADERS);
-  var sqlite3 = loadSqlite3Bindings(t);
+  var sqlite3 = loadSqlite3Library(t);
   var version = sqlite3.sqlite3_libversion();
   print(h.readString(version));
 
-  var filename = "test.db";
+  var filename = ":memory:";
 
   var ppDb = t["sqlite3*"].alloc(null);
   var err = sqlite3.sqlite3_open(filename, ppDb);
@@ -52,7 +52,7 @@ SALARY REAL);
   err = sqlite3.sqlite3_exec(
       ppDb.value, sql, cb.functionCode, t["void*"].nullPtr, zErrMsg);
 
-  if (err != Sqlite3Bindings.SQLITE_OK) {
+  if (err != Sqlite3Def.SQLITE_OK) {
     print("SQL error: ${h.readString(zErrMsg.value)}");
     sqlite3.sqlite3_free(zErrMsg);
   } else {
@@ -73,7 +73,7 @@ VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );
   err = sqlite3.sqlite3_exec(
       ppDb.value, sql, cb.functionCode, t["void*"].nullPtr, zErrMsg);
 
-  if (err != Sqlite3Bindings.SQLITE_OK) {
+  if (err != Sqlite3Def.SQLITE_OK) {
     print("SQL error: ${h.readString(zErrMsg.value)}");
     sqlite3.sqlite3_free(zErrMsg);
   } else {
@@ -85,7 +85,7 @@ VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );
   err = sqlite3.sqlite3_exec(
       ppDb.value, sql, cb.functionCode, t["void*"].nullPtr, zErrMsg);
 
-  if (err != Sqlite3Bindings.SQLITE_OK) {
+  if (err != Sqlite3Def.SQLITE_OK) {
     print("SQL error: ${h.readString(zErrMsg.value)}");
     sqlite3.sqlite3_free(zErrMsg);
   } else {

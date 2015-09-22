@@ -1,3 +1,7 @@
+## 0.0.8
+
+- Big (and better) restructuration of header files and the generated classes
+
 ## 0.0.7
 
 - Added recommendation on how to install SQLite DLL on Windows
