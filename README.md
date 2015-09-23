@@ -2,7 +2,7 @@
 
 SQLite database engine bindings.
 
-Version: 0.0.8
+Version: 0.0.9
 
 The goal of the Dash effort is ultimately to replace JavaScript as the lingua franca of web development on the open web platform.
 

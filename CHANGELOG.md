@@ -1,3 +1,7 @@
+## 0.0.9
+
+- Generated a new version because they were improvements in the package `binary_generator`
+
 ## 0.0.8
 
 - Big (and better) restructuration of header files and the generated classes

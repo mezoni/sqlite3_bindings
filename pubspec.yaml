@@ -1,5 +1,5 @@
 name: sqlite3_bindings
-version: 0.0.8
+version: 0.0.9
 author: Andrew Mezoni <andrew.mezoni@gmail.com>
 description: SQLite database engine bindings.
 homepage: https://github.com/mezoni/sqlite3_bindings

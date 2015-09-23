@@ -7,3 +7,4 @@
 0.0.6 Added some information in `README.md`
 0.0.7 Added recommendation on how to install SQLite DLL on Windows
 0.0.8 Big (and better) restructuration of header files and the generated classes
+0.0.9 Generated a new version because they were improvements in the package `binary_generator`
